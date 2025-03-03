@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Não Encontrada - Ladoceria Sandy</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Seu CSS principal -->
+    <link rel="stylesheet" href="404.css"> <!-- CSS específico para a página 404 -->
+    <!-- Adicionar Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo da Confeitaria" class="logo-redonda">
+        </div>
+        <!-- Barra de pesquisa com ícone integrado -->
+        <div class="search-container">
+            <input type="text" placeholder="DIGITE AQUI A SUA BUSCA" class="search-input">
+            <button class="search-icon">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="menu">
+            <button class="menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="sob-medida">Encomendas Sob Medida</a></li>
+            <li><a href="corporativos">Corporativos</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="error-container">
+            <h1>404</h1>
+            <p>Página não encontrada</p>
+            <p>A página que você está procurando pode ter sido removida, teve seu nome alterado ou está temporariamente indisponível.</p>
+            <a href="/" class="btn-primary">Voltar para a página inicial</a>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

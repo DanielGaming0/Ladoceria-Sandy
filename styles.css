@@ -1,0 +1,293 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff3f1; /* Rosa alaranjado fraco */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff3f1; /* Mesma cor do fundo do site */
+    border-bottom: 1px solid #ddd;
+    position: relative; /* Added for dropdown positioning */
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Estilo para a logo redonda */
+.logo-redonda {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Barra de pesquisa moderna */
+.search-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+    border: 2px solid #ff8a80; /* Rosa mais forte */
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 380px; /* Largura máxima reduzida */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    height: 36px; /* Altura reduzida */
+}
+
+.search-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 6px 10px; /* Padding reduzido */
+    border: none;
+    outline: none;
+    font-size: 13px; /* Fonte reduzida */
+    color: #333;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.search-icon {
+    background-color: #ff8a80; /* Rosa mais forte */
+    color: #fff;
+    border: none;
+    padding: 8px 12px; /* Padding ajustado para centralizar o ícone */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Altura total da barra de pesquisa */
+}
+
+.search-icon i {
+    font-size: 14px; /* Tamanho do ícone ajustado */
+}
+
+.search-icon:hover {
+    background-color: #ff6f61; /* Cor mais forte no hover */
+}
+
+/* Menu Button */
+.menu-btn {
+    background-color: #ff8a80; /* Rosa mais forte */
+    color: #fff;
+    border: none;
+    padding: 10px; /* Padding ajustado */
+    border-radius: 8px; /* Bordas mais arredondadas */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Largura fixa para formar um quadrado */
+    height: 40px; /* Altura fixa para formar um quadrado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para um design mais charmoso */
+}
+
+.menu-btn i {
+    font-size: 18px; /* Tamanho do ícone */
+}
+
+.menu-btn:hover {
+    background-color: #ff6f61; /* Cor mais forte no hover */
+}
+
+/* Sidebar Menu */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Escondido inicialmente */
+    height: 100%;
+    width: 300px; /* Largura aumentada */
+    background-color: rgba(255, 138, 128, 0.95); /* Rosa mais forte com transparência */
+    overflow-x: hidden;
+    transition: left 0.3s ease; /* Transição suave */
+    z-index: 1000; /* Garantir que fique acima de outros elementos */
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 8px 20px; /* Padding reduzido para aproximar as opções */
+    border-bottom: 1px solid #fff;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px; /* Tamanho da fonte igual aos botões */
+    font-weight: bold; /* Texto em negrito */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    letter-spacing: 0.5px; /* Espaçamento entre letras reduzido */
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #ffddd5;
+}
+
+/* Estilo para o botão de fechar o sidebar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Button Styles */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os botões */
+    margin: 20px 0;
+}
+
+.buttons button {
+    background-color: #ff8a80; /* Rosa mais forte */
+    color: #fff;
+    border: none;
+    padding: 8px 12px; /* Mais largo verticalmente (aumentei o padding vertical) */
+    border-radius: 15px; /* Bordas mais arredondadas */
+    cursor: pointer;
+    font-size: 11px; /* Fonte ainda menor */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para um design mais bonito */
+    font-family: 'Arial', sans-serif; /* Fonte mais bonita */
+    font-weight: bold; /* Texto em negrito */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    letter-spacing: 0.5px; /* Espaçamento entre letras reduzido */
+}
+
+.buttons button:hover {
+    background-color: #ff6f61; /* Cor mais forte no hover */
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+
+/* Main Content */
+.cake-container {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse o contêiner */
+}
+
+.cake-image {
+    width: 90%; /* Aumentei a largura para 90% (ficará um pouco mais larga) */
+    max-width: 600px; /* Mantém a largura máxima */
+    border-radius: 20px; /* Bordas mais arredondadas */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    height: auto; /* Mantém a proporção da imagem */
+    clip-path: inset(0 5%); /* Reduzi o recorte para 5% de cada lado (ficará menos fina) */
+}
+
+/* Footer */
+footer {
+    background-color: #ff6f61;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos da Galeria */
+.gallery {
+    display: flex;
+    flex-direction: column; /* Alinha as imagens verticalmente */
+    gap: 20px; /* Espaçamento entre as imagens */
+    padding: 20px;
+    max-width: 1200px; /* Largura máxima da galeria */
+    margin: 0 auto; /* Centraliza a galeria na página */
+    align-items: center; /* Centraliza as imagens horizontalmente */
+}
+
+.image-container {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 85%; /* Largura reduzida para criar espaço nas laterais */
+    max-width: 600px; /* Largura máxima do container */
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Altura automática para manter a proporção */
+    aspect-ratio: 1 / 1; /* Mantém a imagem quadrada */
+    object-fit: cover;
+}
+
+.image-container p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+    padding: 0 10px; /* Adiciona um pouco de espaço interno ao texto */
+}
+
+/* Media Queries para ajustar o layout em diferentes tamanhos de tela */
+@media (min-width: 768px) {
+    .gallery {
+        flex-direction: row; /* Alinha as imagens horizontalmente */
+        flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha */
+        justify-content: center; /* Centraliza as imagens horizontalmente */
+    }
+
+    .image-container {
+        width: calc(40% - 10px); /* Largura reduzida para criar espaço nas laterais */
+        max-width: none; /* Remove a largura máxima para permitir que as imagens se ajustem */
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery {
+        flex-direction: column; /* Alinha as imagens verticalmente */
+        align-items: center; /* Centraliza as imagens horizontalmente */
+    }
+
+    .image-container {
+        width: 85%; /* Largura reduzida para criar espaço nas laterais */
+    }
+}

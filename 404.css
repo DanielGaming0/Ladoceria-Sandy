@@ -1,0 +1,37 @@
+/* Estilo para a seção de erro 404 */
+.error-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff0f5; /* Rosa claro */
+    border-radius: 15px;
+    margin: 50px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-container h1 {
+    font-size: 120px;
+    color: #ff8a80; /* Cor do botão do menu (rosa mais forte) */
+    margin: 0;
+    line-height: 1;
+}
+
+.error-container p {
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.error-container .btn-primary {
+    background-color: #ff8a80; /* Cor do botão do menu (rosa mais forte) */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.error-container .btn-primary:hover {
+    background-color: #ff6f61; /* Cor do botão do menu no hover (rosa mais escuro) */
+}
