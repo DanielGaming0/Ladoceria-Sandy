@@ -52,3 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+// Adiciona um evento de clique ao botão do WhatsApp
+document.getElementById('whatsapp-btn').addEventListener('click', function() {
+    window.location.href = 'https://api.whatsapp.com/send/?phone=5512982418678&text&type=phone_number&app_absent=0&wame_ctl=1&fbclid=PAY2xjawIzK_1leHRuA2FlbQIxMAABpsFk-obVsbcRKChQkhvltsjT6u39R1ItmVk53nNxLSHzB4_rAa8QxQm8bQ_aem_G2iW5gt_ZqSyIYbSRRyKNg';
+});
